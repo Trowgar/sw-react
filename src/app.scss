@@ -1,0 +1,129 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  .navbar-list{
+    display: flex;
+    align-items: center;
+
+    .navbar-link{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      font-family: 'Raleway';
+      text-transform: uppercase;
+      margin-right: 32px;
+      padding-top: 28px;
+      padding-bottom: 30px;
+      a{
+        color: #1D1F22;
+        &:hover{
+          color: #5ECE7B;
+        }
+      }
+      &:active{
+        color: #5ECE7B;
+        border-bottom: 1px solid #5ECE7B;
+      }
+    }
+  }
+
+  .logo{
+    margin-right: 115px;
+  }
+
+  .user-action{
+    display: flex;
+    align-items: center;
+
+    .currency-switcher{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .currency{
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .arrow{
+      margin: 0 32px 5px 0;
+    }
+    .cart{
+      img{
+        margin-top: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.content{
+  margin-top: 80px;
+  .category-title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 160%;
+  }
+  .products{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .product-card{
+      width: 386px;
+      height: 444px;
+      padding: 16px;
+      cursor: pointer;
+      margin-right: 14px;
+      margin-top: 103px;
+      img{
+        margin-bottom: 24px;
+      }
+
+      h3{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+      }
+      span{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+  }
+}
